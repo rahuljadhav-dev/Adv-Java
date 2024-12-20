@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+.myclass1{
+    text-decoration: solid;
+    color-scheme: inherit;
+    color: aqua;
+    font-family: cursive;
+}
+
+.myclass2{
+    border-radius: 25px;
+    background-color: bisque;
+    border-style: solid ;
+    border-color: chartreuse;
+
+}
+
+.myclass3{
+    background-color: cadetblue;
+}
+
+.btn{
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #6200ea;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+
+    &:hover{
+        background-color: blue;
+        color: #ffffff;
+        box-shadow: 0 0 20px;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<form  action="login" >
+    <fieldset >
+        <legend>Personal Info</legend>
+        <input class="myclass1,myclass2" type="text" placeholder="Enter username" name="u"><br>
+        <input class="myclass1,myclass2" type="password" placeholder="Enter password " name="p"><br>
+        <input class="btn" type="submit">
+    </fieldset>
+</form >
+
+</body>
+</html>
